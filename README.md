@@ -16,6 +16,8 @@ Enables keyboard shortcuts for navigation:
 - Left/right arrow to change page
 - Up/down arrow to scoll up/down one screen
 
+Shortcuts are *not* enabled when in text mode.
+
 # gestures.qmd
 Adds the following gestures and tap areas:
 - Swipe down with three fingers to reset pan and zoom, i.e. to scroll to top of the page and zoom to 100%
@@ -27,6 +29,8 @@ Adds the following gestures and tap areas:
 Must be installed together with gestures.qmd and then adds the following keyboard shortcuts
 - Left/right arrow to change page
 - Up/down arrow to scoll up/down one screen or to change page if already at the top/bottom of the page
+
+Shortcuts are *not* enabled when in text mode.
 
 # hidePageLabelsInFullscreen.qmd
 Hide the page numbers at the bottom of the screen when the toolbar is hidden. On the very last page the page labels is still shown. To show the page numbers slide up from the bottom to show the page slider.
