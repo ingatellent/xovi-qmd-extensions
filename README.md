@@ -11,8 +11,8 @@ Increase the distance when scrolling down a page, such that the overlap is only 
 
 # enableShortcuts.qmd
 Enables keyboard shortcuts for navigation:
-Left/right arrow to change page
-Up/down arrow to scoll up/down one screen
+- Left/right arrow to change page
+- Up/down arrow to scoll up/down one screen
 
 # gestures.qmd
 Adds the following gestures and tap areas:
@@ -23,15 +23,14 @@ Adds the following gestures and tap areas:
 
 # enableShortcutsWithScrollOrChangePage.qmd
 Must be installed together with gestures.qmd and then adds the following keyboard shortcuts
-Left/right arrow to change page
-Up/down arrow to scoll up/down one screen or to change page if already at the top/bottom of the page
+- Left/right arrow to change page
+- Up/down arrow to scoll up/down one screen or to change page if already at the top/bottom of the page
 
 # hidePageLabelsInFullscreen.qmd
 Hide the page numbers at the bottom of the screen when the toolbar is hidden. On the very last page the page labels is still shown. To show the page numbers slide up from the bottom to show the page slider.
 
 # hideShowToolbar.qmd
-Hides the button for showing the toolbar. Should definitely only be used with gestures.qmd or a similar activation of a gesture to show the toolbar (if you will be unable to get the toolbar back until you restart the device)
+Hides the button for showing the toolbar. Should definitely only be used with gestures.qmd or a similar activation of a gesture to show the toolbar (if not you will be unable to get the toolbar back until you restart the device)
 
-# miniLightSleep.rM2.qmd
-# miniLightSleep.rmpp.qmd
-Shows a line of text at the bottom right corner instead of the light sleep banner. 
+# miniLightSleep.rM2.qmd/miniLightSleep.rmpp.qmd
+Shows a line of text at the bottom right corner instead of the light sleep banner.
