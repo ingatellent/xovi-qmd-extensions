@@ -1,6 +1,6 @@
 ## Extensions for xovi on a reMarkable
 
-All these qmd extensions require that you first install xovi and qt-resource-rebuilder on your reMarkable (rM1, rM2 or RMPP)
+All these qmd extensions require that you first install [xovi](https://github.com/asivery/rmpp-xovi-extensions/blob/master/INSTALL.MD) and [qt-resource-rebuilder](https://github.com/asivery/rmpp-xovi-extensions/tree/master/qt-resource-rebuilder) on your reMarkable (rM1, rM2 or RMPP)
 
 Add the extensions you want to apply to the /home/root/xovi/exthome/qt-resource-rebuilder folder on your device and restart xovi by running ~/xovi/start
 
