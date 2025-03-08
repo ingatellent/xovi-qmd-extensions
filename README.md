@@ -4,7 +4,7 @@ All these qmd extensions require that you first install [xovi](https://github.co
 
 Add the extensions you want to apply to the /home/root/xovi/exthome/qt-resource-rebuilder folder on your device and restart xovi by running ~/xovi/start
 
-Combine changeVerticalJump.qmd, gestures.qmd, hidePageLabelsInFullscreen.qmd and hideShowToolbar.qmd to get a clean fullscreen view where you can tap in the corners to change pages. Or when viewing a portrait document in landscape mode to tap in the corners to scroll a page down and then change page on the next tap.
+Combine changeVerticalJump.qmd, gestures.qmd, hidePageLabelsInFullscreen.qmd and hideShowToolbar.qmd to get a clean fullscreen view where you can tap in the corners to change pages. Or when viewing a portrait document in landscape mode: Tap in the corners to scroll a page down and then change page on the next tap.
 
 .qmd-files in the 3.18 folder are hashed using hashes from 3.18, but probably also work on previous or later versions.
 
