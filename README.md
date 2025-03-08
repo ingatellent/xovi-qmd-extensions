@@ -32,7 +32,7 @@ Add the following gestures and tap areas:
 
 Shortcuts are *not* enabled when in text mode.
 
-#hideDocumentClose.qmd
+# hideDocumentClose.qmd
 Hide the close button in an open document. Slide down from the top to close the document.
 
 # hidePageLabelsInFullscreen.qmd
