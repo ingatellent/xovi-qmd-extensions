@@ -26,7 +26,7 @@ Adds the following gestures and tap areas:
 - When the toolbar is hidden, tap on the bottom left to scroll up, and to change to the previous page if you are already nearly at the top) (no scrollbar shown)
 
 # enableShortcutsWithScrollOrChangePage.qmd
-Must be installed together with gestures.qmd and then adds the following keyboard shortcuts
+**Must** be installed **together with** *gestures.qmd* and must be installed **instead of** *enableShortcuts.qmd*. It then adds the following keyboard shortcuts
 - Left/right arrow to change page
 - Up/down arrow to scoll up/down one screen or to change page if already at the top/bottom of the page
 
