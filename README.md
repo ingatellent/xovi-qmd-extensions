@@ -32,6 +32,9 @@ Add the following gestures and tap areas:
 
 Shortcuts are *not* enabled when in text mode.
 
+#hideDocumentClose.qmd
+Hide the close button in an open document. Slide down from the top to close the document.
+
 # hidePageLabelsInFullscreen.qmd
 Hide the page numbers at the bottom of the screen when the toolbar is hidden. On the very last page the page nuumbers are still shown. To show the page numbers slide up from the bottom to show the page slider.
 
