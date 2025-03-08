@@ -12,14 +12,14 @@ Combine changeVerticalJump.qmd, gestures.qmd, hidePageLabelsInFullscreen.qmd and
 Increase the distance when scrolling down a page, such that the overlap is only 10%.
 
 # enableShortcuts.qmd
-Enables keyboard shortcuts for navigation:
+Enable keyboard shortcuts for navigation:
 - Left/right arrow to change page
 - Up/down arrow to scoll up/down one screen
 
 Shortcuts are *not* enabled when in text mode.
 
 # gestures.qmd
-Adds the following gestures and tap areas:
+Add the following gestures and tap areas:
 - Swipe down with three fingers to reset pan and zoom, i.e. to scroll to top of the page and zoom to 100%
 - Swipe out and in from the toolbar to show/hide the toolbar
 - When the toolbar is hidden, tap on the bottom right to scroll down, and to change to the next page if you are already nearly at the bottom) (no scrollbar shown)
@@ -33,10 +33,10 @@ Adds the following gestures and tap areas:
 Shortcuts are *not* enabled when in text mode.
 
 # hidePageLabelsInFullscreen.qmd
-Hide the page numbers at the bottom of the screen when the toolbar is hidden. On the very last page the page labels is still shown. To show the page numbers slide up from the bottom to show the page slider.
+Hide the page numbers at the bottom of the screen when the toolbar is hidden. On the very last page the page nuumbers are still shown. To show the page numbers slide up from the bottom to show the page slider.
 
 # hideShowToolbar.qmd
-Hides the button for showing the toolbar. Should definitely only be used with gestures.qmd or a similar activation of a gesture to show the toolbar (if not you will be unable to get the toolbar back until you restart the device)
+Hide the button for showing the toolbar. Should definitely only be used with gestures.qmd or a similar activation of a gesture to show the toolbar (if not you will be unable to get the toolbar back until you restart the device)
 
 # miniLightSleep.rM2.qmd/miniLightSleep.rmpp.qmd
-Shows a line of text at the bottom right corner instead of the light sleep banner.
+Show a line of text at the bottom right corner instead of the light sleep banner.
