@@ -53,5 +53,5 @@ Hide the page numbers at the bottom of the screen when the toolbar is hidden. On
 ## hideShowToolbar.qmd
 Hide the button for showing the toolbar. Should definitely only be used with gestures.qmd or a similar activation of a gesture to show the toolbar (if not you will be unable to get the toolbar back until you restart the device)
 
-## miniLightSleep.rM2.qmd/miniLightSleep.rmpp.qmd
+## miniLightSleep.qmd
 Show a line of text at the bottom right corner instead of the light sleep banner.
