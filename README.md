@@ -1,4 +1,12 @@
-## Extensions for xovi on a reMarkable
+# Extensions for xovi on a reMarkable
+
+These are extensions for the reMarkable tablets.
+
+They enable
+ - Navigation between pages using the type folios
+ - A reader mode, with the entire UI hidden, and where you can use taps to scroll and change page
+
+## How to install
 
 All these qmd extensions require that you first install [xovi](https://github.com/asivery/rmpp-xovi-extensions/blob/master/INSTALL.MD) and [qt-resource-rebuilder](https://github.com/asivery/rmpp-xovi-extensions/tree/master/qt-resource-rebuilder) on your reMarkable (rM1, rM2 or RMPP)
 
@@ -10,38 +18,40 @@ Combine changeVerticalJump.qmd, gestures.qmd, hidePageLabelsInFullscreen.qmd and
 
 ![visual guide to the usage of the extensions](images/allCombined.png)
 
-# changeVerticalJump.qmd
+## changeVerticalJump.qmd
 Increase the distance when scrolling down a page, such that the overlap is only 10%.
 
-# enableShortcuts.qmd
+## enableShortcuts.qmd
 Enable keyboard shortcuts for navigation:
 - Left/right arrow to change page
 - Up/down arrow to scoll up/down one screen
 
 Shortcuts are *not* enabled when in text mode.
 
-# gestures.qmd
+## gestures.qmd
 Add the following gestures and tap areas:
 - Swipe down with three fingers to reset pan and zoom, i.e. to scroll to top of the page and zoom to 100%
 - Swipe out and in from the toolbar to show/hide the toolbar
 - When the toolbar is hidden, tap on the bottom right to scroll down, and to change to the next page if you are already nearly at the bottom) (no scrollbar shown)
 - When the toolbar is hidden, tap on the bottom left to scroll up, and to change to the previous page if you are already nearly at the top) (no scrollbar shown)
 
-# enableShortcutsWithScrollOrChangePage.qmd
+.pdf links in the tap area cannot be activated. Exit fullscreen mode before using them.
+
+## enableShortcutsWithScrollOrChangePage.qmd
 **Must** be installed **together with** *gestures.qmd* and must be installed **instead of** *enableShortcuts.qmd*. It then adds the following keyboard shortcuts
 - Left/right arrow to change page
 - Up/down arrow to scoll up/down one screen or to change page if already at the top/bottom of the page
 
 Shortcuts are *not* enabled when in text mode.
 
-# hideDocumentClose.qmd
+## hideDocumentClose.qmd
 Hide the close button in an open document. Slide down from the top to close the document.
 
-# hidePageLabelsInFullscreen.qmd
+## hidePageLabelsInFullscreen.qmd
 Hide the page numbers at the bottom of the screen when the toolbar is hidden. On the very last page the page nuumbers are still shown. To show the page numbers slide up from the bottom to show the page slider.
 
-# hideShowToolbar.qmd
+## hideShowToolbar.qmd
 Hide the button for showing the toolbar. Should definitely only be used with gestures.qmd or a similar activation of a gesture to show the toolbar (if not you will be unable to get the toolbar back until you restart the device)
 
-# miniLightSleep.rM2.qmd/miniLightSleep.rmpp.qmd
+## miniLightSleep.rM2.qmd/miniLightSleep.rmpp.qmd
 Show a line of text at the bottom right corner instead of the light sleep banner.
