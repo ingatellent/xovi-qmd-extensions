@@ -25,8 +25,6 @@ Add the following gestures and tap areas:
 - When the toolbar is hidden, tap on the bottom right to scroll down, and to change to the next page if you are already nearly at the bottom) (no scrollbar shown)
 - When the toolbar is hidden, tap on the bottom left to scroll up, and to change to the previous page if you are already nearly at the top) (no scrollbar shown)
 
-When in fullscreen .pdf-links does not work, since all taps are caught.
-
 # enableShortcutsWithScrollOrChangePage.qmd
 **Must** be installed **together with** *gestures.qmd* and must be installed **instead of** *enableShortcuts.qmd*. It then adds the following keyboard shortcuts
 - Left/right arrow to change page
