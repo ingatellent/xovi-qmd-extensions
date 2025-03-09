@@ -8,7 +8,7 @@ Combine changeVerticalJump.qmd, gestures.qmd, hidePageLabelsInFullscreen.qmd and
 
 .qmd-files in the 3.18 folder are hashed using hashes from 3.18, but probably also work on previous or later versions.
 
-![image](images/allCombined.png)
+![image](images/allCombined.png | width=100)
 
 # changeVerticalJump.qmd
 Increase the distance when scrolling down a page, such that the overlap is only 10%.
