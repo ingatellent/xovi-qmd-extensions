@@ -4,7 +4,7 @@ These are extensions for the reMarkable tablets.
 
 They enable
  - Navigation between pages using the type folios
- - A reader mode, with the entire UI hidden, and where you can use taps to scroll and change page
+ - A reader mode, with the entire UI hidden (page numbers, toolbar button), and where you can use taps to scroll and change page
 
 ## How to install
 
