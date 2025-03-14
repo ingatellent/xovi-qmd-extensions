@@ -55,3 +55,6 @@ Hide the button for showing the toolbar. Should definitely only be used with ges
 
 ## miniLightSleep.qmd
 Show a line of text at the bottom right corner instead of the light sleep banner.
+
+## feverLightSteps.qmd
+For the rmpp. Changes the 5 level light slider in quick settings to a 4 level slider, such that you can choose 0%, 25%, 50%, 75% and 100% light intensity. In settings (long press the lamp symbol below the slider), you can still choose 20%, 40% and 60%, thus increasing the number of different levels.
