@@ -21,6 +21,9 @@ Combine changeVerticalJump.qmd, gestures.qmd, hidePageLabelsInFullscreen.qmd and
 ## changeVerticalJump.qmd
 Increase the distance when scrolling down a page, such that the overlap is only 10%.
 
+## delayStrokeRefresch.qmd
+Delays the refresh after making a colored stroke, such that the color is not updated until a period of 10 seconds with no interaction with the tablet.
+
 ## enableShortcuts.qmd
 Enable keyboard shortcuts for navigation:
 - Left/right arrow to change page
