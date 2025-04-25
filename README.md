@@ -44,6 +44,7 @@ Add the following gestures and tap areas:
 **Must** be installed **together with** *gestures.qmd* and must be installed **instead of** *enableShortcuts.qmd*. It then adds the following keyboard shortcuts
 - Left/right arrow to change page
 - Up/down arrow to scoll up/down one screen or to change page if already at the top/bottom of the page
+- Physical page turn buttons on the rM1 scolls up/down one screen or to change page if already at the top/bottom of the page
 
 Shortcuts are *not* enabled when in text mode.
 
@@ -60,4 +61,4 @@ Hide the button for showing the toolbar. Should definitely only be used with ges
 Show a line of text at the bottom right corner instead of the light sleep banner.
 
 ## feverLightSteps.qmd
-For the rmpp. Changes the 5 level light slider in quick settings to a 4 level slider, such that you can choose 0%, 25%, 50%, 75% and 100% light intensity. In settings (long press the lamp symbol below the slider), you can still choose 20%, 40% and 60%, thus increasing the number of different levels.
+For the rmpp (do **not** use on rM2 or rM1). Changes the 5 level light slider in quick settings to a 4 level slider, such that you can choose 0%, 25%, 50%, 75% and 100% light intensity. In settings (long press the lamp symbol below the slider), you can still choose 20%, 40% and 60%, thus increasing the number of different levels.
