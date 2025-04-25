@@ -44,7 +44,7 @@ Add the following gestures and tap areas:
 **Must** be installed **together with** *gestures.qmd* and must be installed **instead of** *enableShortcuts.qmd*. It then adds the following keyboard shortcuts
 - Left/right arrow to change page
 - Up/down arrow to scoll up/down one screen or to change page if already at the top/bottom of the page
-- Physical page turn buttons on the rM1 scolls up/down one screen or to change page if already at the top/bottom of the page
+- Physical page turn buttons on the rM1 scoll up/down one screen or change page if already at the top/bottom of the page
 
 Shortcuts are *not* enabled when in text mode.
 
