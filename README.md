@@ -45,6 +45,7 @@ Add the following gestures and tap areas:
 - Left/right arrow to change page
 - Up/down arrow to scoll up/down one screen or to change page if already at the top/bottom of the page
 - Physical page turn buttons on the rM1 scoll up/down one screen or change page if already at the top/bottom of the page
+- On rM1 if you install the [remarkable-stylus plugin](https://github.com/mb1986/remarkable-stylus) you can use the side button to erase selection and the rubber eraser as a regular eraser (currently broken in notebooks, but works in .pdfs)
 
 Shortcuts are *not* enabled when in text mode.
 
