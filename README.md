@@ -24,6 +24,9 @@ Increase the distance when scrolling down a page, such that the overlap is only 
 ## delayStrokeRefresch.qmd
 Delays the refresh after making a colored stroke, such that the color is not updated until a period of 10 seconds with no interaction with the tablet.
 
+## enableAllColors.qmd
+Use on rM1 and rM2 to enable the fulle color selection from the RMPP
+
 ## enableShortcuts.qmd
 Enable keyboard shortcuts for navigation:
 - Left/right arrow to change page
