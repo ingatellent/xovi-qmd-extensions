@@ -14,13 +14,13 @@ Add the extensions you want to apply to the /home/root/xovi/exthome/qt-resource-
 
 Combine changeVerticalJump.qmd, gestures.qmd, hidePageLabelsInFullscreen.qmd and hideShowToolbar.qmd to get a clean fullscreen view where you can tap in the corners to change pages. Or when viewing a portrait document in landscape mode: Tap in the corners to scroll a page down and then change page on the next tap.
 
-.qmd-files in the 3.18 folder are hashed using hashes from 3.18, but probably also work on previous or later versions.
-
-.qmd-files in the 3.20 folder are updated for the changes to that version, but probably also work on later versions.
+.qmd-files in the folders for older versions are hashed using hashes from that version, but probably also work on previous or later versions.
 
 The files in the 3.19 folder are currently untested, let me know if any of them does not work.
 
-New changes will only be applied to the latest release, i.e. currently 3.20.
+.qmd-files in the 3.22 folder are updated for the changes to that version, but probably also work on later versions.
+
+New changes will only be applied to the latest release, i.e. currently 3.22.
 
 ![visual guide to the usage of the extensions](images/allCombined.png)
 
