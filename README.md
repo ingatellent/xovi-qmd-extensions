@@ -43,7 +43,7 @@ Shortcuts are *not* enabled when in text mode.
 ## gestures.qmd
 Add the following gestures and tap areas:
 - Swipe down with three fingers to reset pan and zoom, i.e. to scroll to top of the page and zoom to 100%
-- Swipe out and in from the toolbar to show/hide the toolbar
+- Swipe out and in from the toolbar to show/hide the toolbar - for horizontal toolbar, the swipe only works at the show toolbar button (in order not to interfere with native gestures)
 - When the toolbar is hidden, tap on the bottom right to scroll down, and to change to the next page if you are already nearly at the bottom) (no scrollbar shown)
 - When the toolbar is hidden, tap on the bottom left to scroll up, and to change to the previous page if you are already nearly at the top) (no scrollbar shown)
 - In .pdf and .epub documents: Tap with four fingers to toggle between Off and Full screen for the contrast filter
