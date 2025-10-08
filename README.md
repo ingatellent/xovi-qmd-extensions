@@ -75,4 +75,4 @@ Show a line of text at the bottom right corner instead of the light sleep banner
 For the rmpp (do **not** use on rM2 or rM1). Changes the 5 level light slider in quick settings to a 4 level slider, such that you can choose 0%, 25%, 50%, 75% and 100% light intensity. In settings (long press the lamp symbol below the slider), you can still choose 20%, 40% and 60%, thus increasing the number of different levels.
 
 ## enableExtraPenOnMove.qmd
-For the rmppm only. Adds the extra pen slot to the toolbar.
+For the rmppm only. Adds the extra pen slot to the toolbar. - Requires ≥ v16 of qt-resource-rebuilder
