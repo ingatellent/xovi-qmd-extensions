@@ -76,3 +76,6 @@ For the rmpp (do **not** use on rM2 or rM1). Changes the 5 level light slider in
 
 ## enableExtraPenOnMove.qmd
 For the rmppm only. Adds the extra pen slot to the toolbar. - Requires ≥ v16 of qt-resource-rebuilder
+
+## randomSleepScreen.qmd
+Picks a random sleep screen image from the folder `~/sleepScreens/`. Falls back to the chosen path in xochitl.conf (`SleepScreenPath=...`) if no .png images are found.
