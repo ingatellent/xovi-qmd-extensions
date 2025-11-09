@@ -18,9 +18,9 @@ Combine changeVerticalJump.qmd, gestures.qmd, hidePageLabelsInFullscreen.qmd and
 
 The files in the 3.19 folder are currently untested, let me know if any of them does not work.
 
-.qmd-files in the 3.22 folder are updated for the changes to that version, but probably also work on later versions.
+.qmd-files in the 3.23 folder are updated for the changes to that version, but probably also work on later versions.
 
-New changes will only be applied to the latest release, i.e. currently 3.22.
+New changes will only be applied to the latest release, i.e. currently 3.23.
 
 ![visual guide to the usage of the extensions](images/allCombined.png)
 
