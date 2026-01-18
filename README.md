@@ -79,3 +79,11 @@ For the rmppm only. Adds the extra pen slot to the toolbar. - Requires ≥ v16 o
 
 ## randomSleepScreen.qmd
 Picks a random sleep screen image from the folder `~/sleepScreens/`. Falls back to the chosen path in xochitl.conf (`SleepScreenPath=...`) if no .png images are found.
+
+## fixCustomFit.qmd
+When this is installed the Custom Fit zoom is automatically adjusted across devices and orientations, such that if you choose a custom fit for a document, the visible part of the document will be the same on all devices, no matter which orientation.
+This mod works by assuming that all custom fits has been made on an rmpp in landscape mode, and also adjust the saved custom fit if it is saved from another device. Any documents ajusted on other devices than rmpp or in portrait must be readjusted after installation (and after uninstall).
+If you primarily use another device you can change from the rmpp dimensions 1620 x 2160 to other dimensions in the code (or you can swap the numbers to use portrait as the primary view). In all other views than the primary view, the image needs an extra refresh when chaning page, since the reMarkable software preloads the part of the page, it thinks it needs to show.
+
+## addFinishedButton.qmd
+This adds a [Finished] button, when selecting documents in the main navigator. The button is visible if the current folder contains at least one subfolder, and pressing the button moves the document to the first subfolder. This can be used if you review a lot of documents, and have created a subfolder to the ones you have alredy reviewed, then you can easily move a reviewed document to the subfolder (without leaving the current view and scroll location).
