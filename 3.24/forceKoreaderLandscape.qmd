@@ -1,0 +1,16 @@
+AFFECT /appload/qml/window.qml
+TRAVERSE ?#windowCanvas
+LOCATE BEFORE ALL
+INSERT {
+     rotation: root.appName === "KOReader" && root.globalWidth > root.globalHeight ? -90 : 0
+}
+REBUILD states
+LOCATE BEFORE STREAM \  height: parent.height
+                        width: windowCanvas.contentAspectRatio * parent.height \
+REMOVE LOCATED
+INSERT STREAM \
+			height: windowCanvas.rotation === 0 ? parent.height : parent.width
+			width: windowCanvas.rotation === 0 ? windowCanvas.contentAspectRatio * parent.height : windowCanvas.contentAspectRatio * parent.width \
+END REBUILD
+END TRAVERSE
+END AFFECT
