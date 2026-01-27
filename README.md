@@ -87,3 +87,6 @@ If you primarily use another device you can change from the rmpp dimensions 1620
 
 ## addFinishedButton.qmd
 This adds a [Finished] button, when selecting documents in the main navigator. The button is visible if the current folder contains at least one subfolder, and pressing the button moves the document to the first subfolder. This can be used if you review a lot of documents, and have created a subfolder to the ones you have alredy reviewed, then you can easily move a reviewed document to the subfolder (without leaving the current view and scroll location).
+
+## forceKoreaderLandscape.qmd
+Keeps the appload app KOReader in the same aspect ratio as the screen - also when using the type folio. Small caveat: Even the gesture for showing the topbar is swipe in from the left when using the tablet in landscape mode.
