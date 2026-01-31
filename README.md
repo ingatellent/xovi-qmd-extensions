@@ -5,6 +5,7 @@ These are extensions for the reMarkable tablets.
 They enable
  - Navigation between pages using the type folios
  - A reader mode, with the entire UI hidden (page numbers, toolbar button), and where you can use taps to scroll and change page
+ - A few ui fixes, e.g. usage of Custom Fit zoom across devices and screen orientations, KOReader in landscape mode when using typefolio.
 
 ## How to install
 
@@ -16,11 +17,7 @@ Combine changeVerticalJump.qmd, gestures.qmd, hidePageLabelsInFullscreen.qmd and
 
 .qmd-files in the folders for older versions are hashed using hashes from that version, but probably also work on previous or later versions.
 
-The files in the 3.19 folder are currently untested, let me know if any of them does not work.
-
-.qmd-files in the 3.23 folder are updated for the changes to that version, but probably also work on later versions.
-
-New changes will only be applied to the latest release, i.e. currently 3.23.
+New changes will only be applied to the latest release.
 
 ![visual guide to the usage of the extensions](images/allCombined.png)
 
@@ -33,31 +30,36 @@ Delays the refresh after making a colored stroke, such that the color is not upd
 ## enableAllColors.qmd
 Use on rM1 and rM2 to enable the full color selection from the RMPP
 
-## enableShortcuts.qmd
+## navigateUsingArrowKeys.qmd
+(Requires scrollScreenUpOrDown.qmd)
 Enable keyboard shortcuts for navigation:
 - Left/right arrow to change page
-- Up/down arrow to scoll up/down one screen
+- Up/down arrow to scoll up/down one screen 
 
 Shortcuts are *not* enabled when in text mode.
 
-## gestures.qmd
+## tabToChangeViewOrPage.qmd
+(Requires scrollScreenUpOrDown.qmd)
 Add the following gestures and tap areas:
-- Swipe down with three fingers to reset pan and zoom, i.e. to scroll to top of the page and zoom to 100%
-- Swipe out and in from the toolbar to show/hide the toolbar - for horizontal toolbar, the swipe only works at the show toolbar button (in order not to interfere with native gestures)
-- When the toolbar is hidden, tap on the bottom right to scroll down, and to change to the next page if you are already nearly at the bottom) (no scrollbar shown)
 - When the toolbar is hidden, tap on the bottom left to scroll up, and to change to the previous page if you are already nearly at the top) (no scrollbar shown)
-- In .pdf and .epub documents: Tap with four fingers to toggle between Off and Full screen for the contrast filter
 
 .pdf links in the tap area cannot be activated. Exit fullscreen mode before using them.
 
-## enableShortcutsWithScrollOrChangePage.qmd
-**Must** be installed **together with** *gestures.qmd* and must be installed **instead of** *enableShortcuts.qmd*. It then adds the following keyboard shortcuts
-- Left/right arrow to change page
-- Up/down arrow to scoll up/down one screen or to change page if already at the top/bottom of the page
-- Physical page turn buttons on the rM1 scoll up/down one screen or change page if already at the top/bottom of the page
-- On rM1 or rM2 if you install the [remarkable-stylus plugin](https://github.com/mb1986/remarkable-stylus) you can use the side button to erase selection and the rubber eraser as a regular eraser (on rM1 the plugin is currently broken in notebooks, but works in .pdfs - if you compile it yourself and change the keypress from Ctrl+I to Ctrl+T this extension will also work in notebooks)
+## threeFingerSwipeToResetView.qmd
+Add the following gesture:
+- Swipe down with three fingers to reset pan and zoom, i.e. to scroll to top of the page and zoom to 100%
 
-Shortcuts are *not* enabled when in text mode.
+
+## swipeToHideOrShowToolbar.qmd
+Add the following gestures:
+- Swipe out and in from the toolbar to show/hide the toolbar - for horizontal toolbar, the swipe only works at the show toolbar button (in order not to interfere with native gestures)
+
+## fourFingerChangeFilter.qmd
+Add the following gesture:
+- In .pdf and .epub documents: Tap with four fingers to toggle between Off and Full screen for the contrast filter
+
+## shortcutsToChooseErase.qmd
+- On rM1 or rM2 if you install the [remarkable-stylus plugin](https://github.com/mb1986/remarkable-stylus) you can use the side button to erase selection and the rubber eraser as a regular eraser (on rM1 the plugin is currently broken in notebooks, but works in .pdfs - if you compile it yourself and change the keypress from Ctrl+I to Ctrl+T this extension will also work in notebooks)
 
 ## hideDocumentClose.qmd
 Hide the close button in an open document. Slide down from the top to close the document.
@@ -89,4 +91,7 @@ If you primarily use another device you can change from the rmpp dimensions 1620
 This adds a [Finished] button, when selecting documents in the main navigator. The button is visible if the current folder contains at least one subfolder, and pressing the button moves the document to the first subfolder. This can be used if you review a lot of documents, and have created a subfolder to the ones you have alredy reviewed, then you can easily move a reviewed document to the subfolder (without leaving the current view and scroll location).
 
 ## forceKoreaderLandscape.qmd
-Keeps the appload app KOReader in the same aspect ratio as the screen - also when using the type folio. Small caveat: Even the gesture for showing the topbar is swipe in from the left when using the tablet in landscape mode.
+Keeps the appload app KOReader in the same aspect ratio as the screen - also when using the type folio. Small caveat: The gesture for showing the topbar is swipe in from the left when using the tablet in landscape mode.
+
+## addTrashcanToSelection.qmd
+Adds a trashcan when selecting strokes. When activating the strokes are deleted (leaving the clipboard unchanged).
