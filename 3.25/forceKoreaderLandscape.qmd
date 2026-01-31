@@ -2,7 +2,7 @@ AFFECT /appload/qml/window.qml
 TRAVERSE ?#windowCanvas
 LOCATE BEFORE ALL
 INSERT {
-     rotation: root.appName === "KoReader" && root.globalWidth > root.globalHeight ? -90 : 0
+     rotation: root.appName === "KOReader" && root.globalWidth > root.globalHeight ? -90 : 0
 }
 REBUILD states
 LOCATE BEFORE STREAM \  height: parent.height
