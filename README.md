@@ -95,3 +95,6 @@ Keeps the appload app KOReader in the same aspect ratio as the screen - also whe
 
 ## addTrashcanToSelection.qmd
 Adds a trashcan when selecting strokes. When activating the strokes are deleted (leaving the clipboard unchanged).
+
+## changeGreenColor.qmd
+Change the default green color to a much darker color. Works in exports both on device and through reMarkable's apps.
