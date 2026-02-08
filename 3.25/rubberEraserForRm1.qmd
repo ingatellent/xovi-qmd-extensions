@@ -1,0 +1,25 @@
+AFFECT [[1224665461898798997]]
+IMPORT net.rmitchellscott.RmStylus [[180922.180921]]
+TRAVERSE ?#[[6504254477]]
+LOCATE AFTER ALL
+INSERT {
+		RmStylus {
+            property ~&197102514&~ toolBeforeRubber;
+            onRubberActivated: {
+                rubberMultipleClickTimer.pressCount++;
+                rubberWasHeld = ~&214625660372&~;
+                ~&5972376&~(~&8397887615021556741&~.~&8399372782522826843&~ === ~&8397887615021556741&~.~&214601156697&~) {
+                    toolBeforeRubber = ~&7842069035455457876&~.~&8399230650759060099&~;
+                    ~&233745975898428&~.~&5107434981825242642&~(6);
+                    ~&7842069035455457876&~.~&8399230650759060099&~ = ~&"7082627422347&~;
+                }
+		    }
+
+            onRubberDeactivated: {
+                ~&5972376&~(toolBeforeRubber) ~&7842069035455457876&~.~&8399230650759060099&~ = toolBeforeRubber;
+            }
+		}
+}
+END TRAVERSE
+END AFFECT
+

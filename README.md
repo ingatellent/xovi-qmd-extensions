@@ -98,3 +98,9 @@ Adds a trashcan when selecting strokes. When activating the strokes are deleted 
 
 ## changeGreenColor.qmd
 Change the default green color to a much darker color. Works in exports both on device and through reMarkable's apps.
+
+## rubberEraserForRm1.qmd
+Make the rubber eraser on a pen work as eraser on rM1. Requires [rm-stylus](https://github.com/rmitchellscott/rm-stylus).
+
+## buttonForPenChange.qmd
+When installed you can press the side button on a pen to erase selection. If you click once (short), the tool changes to selection. If you double click you change to the previous tool in the toolbar (eraser tool ignored). Requires [rm-stylus](https://github.com/rmitchellscott/rm-stylus).
