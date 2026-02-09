@@ -103,4 +103,4 @@ Change the default green color to a much darker color. Works in exports both on 
 Make the rubber eraser on a pen work as eraser on rM1. Requires [rm-stylus](https://github.com/rmitchellscott/rm-stylus).
 
 ## buttonForPenChange.qmd
-When installed you can press the side button on a pen to erase selection. If you click once (short), the tool changes to selection. If you double click you change to the previous tool in the toolbar (eraser tool ignored). Requires [rm-stylus](https://github.com/rmitchellscott/rm-stylus).
+When installed you can press the side button on a pen to erase selection. If you click once (short), the tool changes to selection. If you prefer to use the eraser and not selection eraser, you can look for the little `(8)` in the code and change it to a `(6)`. If you double click you change to the previous tool in the toolbar (eraser tool ignored). Requires [rm-stylus](https://github.com/rmitchellscott/rm-stylus).
