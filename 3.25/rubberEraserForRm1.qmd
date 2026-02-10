@@ -6,8 +6,6 @@ INSERT {
 		RmStylus {
             property ~&197102514&~ toolBeforeRubber;
             onRubberActivated: {
-                rubberMultipleClickTimer.pressCount++;
-                rubberWasHeld = ~&214625660372&~;
                 ~&5972376&~(~&8397887615021556741&~.~&8399372782522826843&~ === ~&8397887615021556741&~.~&214601156697&~) {
                     toolBeforeRubber = ~&7842069035455457876&~.~&8399230650759060099&~;
                     ~&233745975898428&~.~&5107434981825242642&~(6);
