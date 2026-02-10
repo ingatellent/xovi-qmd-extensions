@@ -104,3 +104,6 @@ Make the rubber eraser on a pen work as eraser on rM1. Requires [rm-stylus](http
 
 ## buttonForPenChange.qmd
 When installed you can press the side button on a pen to erase selection. If you click once (short), the tool changes to selection. If you prefer to use the eraser and not selection eraser, you can look for the little `(8)` in the code and change it to a `(6)`. If you double click you change to the previous tool in the toolbar (eraser tool ignored). Requires [rm-stylus](https://github.com/rmitchellscott/rm-stylus).
+ 
+## fixFileter.qmd
+There's a long standing bug, where the chosen filters in the sidebar in the main file explorer are not highlighted even though they are active. The name of the sidebar row (Filter by) is also not correctly updated with the name of the current filter. This fixes this bug.
