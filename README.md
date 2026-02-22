@@ -99,7 +99,7 @@ Adds a trashcan when selecting strokes. When activating the strokes are deleted 
 ## changeGreenColor.qmd
 Change the default green color to a much darker color. Works in exports both on device and through reMarkable's apps.
 
-You can change you own colors (or the green one), by editing (or even dublicating and editing) this part of the code
+You can change your own colors (or the green one), by editing (or even dublicating and editing) this part of the code
 
 ```
 INSERT TEMPLATE changeColorDefinitionsTemplate {
