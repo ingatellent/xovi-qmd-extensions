@@ -135,3 +135,7 @@ When installed you can press the side button on a pen to erase selection. If you
  
 ## fixFilter.qmd
 There's a long standing bug, where the chosen filters in the sidebar in the main file explorer are not highlighted even though they are active. The name of the sidebar row (Filter by) is also not correctly updated with the name of the current filter. This fixes this bug.
+
+## addTagsToContextMenu.qmd
+Add a tag directly from the context menu, when you have selected text. Works on handwritten text (requires Connect or rmfakecloud with handwriting recognition enabled) typed text on notepages, or on selected text from a .pdf file or .epub file (experimental setting must be enabled).
+
