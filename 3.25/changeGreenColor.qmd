@@ -1,3 +1,11 @@
+SLOT changeColorDefinitionsSlot
+INSERT TEMPLATE changeColorDefinitionsTemplate {
+    originalToolColor: 10
+    newToolColor: 9
+    newToolrgb: (0xFF338833)
+    newDisplayColor: "#338833"
+}
+END SLOT
 AFFECT [[6722609618937832156]]
 TRAVERSE ?#[[6504254477]]
 REPLACE [[4129553690040935969]] WITH {
@@ -28,19 +36,6 @@ END TRAVERSE
 TRAVERSE ?#[[7060683329257607547]]
 LOCATE AFTER ALL
 INSERT {
-~{changeColorDefinitionsSlot}~
-}
-END TRAVERSE
-END AFFECT
-SLOT changeColorDefinitionsSlot
-INSERT TEMPLATE changeColorDefinitionsTemplate {
-    originalToolColor: 10
-    newToolColor: 9
-    newToolrgb: (0xFF338833)
-    newDisplayColor: "#338833"
-}
-END SLOT
-TEMPLATE changeColorDefinitionsTemplate {
 property ~&6503679477&~ initialized: ~&214625660372&~
     ~&214604601930&~ {
         ~&7713147298280334&~: 0
@@ -49,13 +44,20 @@ property ~&6503679477&~ initialized: ~&214625660372&~
         ~&495358363329399331&~: {
             ~&5972376&~ (!initialized) {
                 initialized = ~&6504329801&~
+
+				~{changeColorDefinitionsSlot}~
+		
+            }
+        }
+    }
+}
+END TRAVERSE
+END AFFECT
+TEMPLATE changeColorDefinitionsTemplate {
 		~&5972376&~ (~&254549367717124902&~ === ~{originalToolColor}~ ) {
 			initialized = ~&6504329801&~;
 			~&254549367717124902&~ = ~{newToolColor}~;
 			~&197098340&~ = ~{newToolrgb}~;
 			~&15784640987262621918&~ = ~{newDisplayColor}~;
 		}
-            }
-        }
-    }
 }
