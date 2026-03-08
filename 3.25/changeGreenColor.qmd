@@ -55,7 +55,6 @@ END TRAVERSE
 END AFFECT
 TEMPLATE changeColorDefinitionsTemplate {
 		~&5972376&~ (~&254549367717124902&~ === ~{originalToolColor}~ ) {
-			initialized = ~&6504329801&~;
 			~&254549367717124902&~ = ~{newToolColor}~;
 			~&197098340&~ = ~{newToolrgb}~;
 			~&15784640987262621918&~ = ~{newDisplayColor}~;
