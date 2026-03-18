@@ -1,0 +1,16 @@
+AFFECT /appload/qml/window.qml
+TRAVERSE ?#windowCanvas
+LOCATE BEFORE ALL
+INSERT {
+     ~&7713532151049593&~: ~&6504254477&~.appName === "KOReader" && ~&6504254477&~.globalWidth > ~&6504254477&~.globalHeight ? -90 : 0
+}
+REBUILD [[7083177690781]]
+LOCATE BEFORE STREAM \  ~&7082729686082&~: ~&7083038346995&~.~&7082729686082&~
+                        ~&214646099849&~: windowCanvas.contentAspectRatio * ~&7083038346995&~.~&7082729686082&~ \
+REMOVE LOCATED
+INSERT STREAM \
+			~&7082729686082&~: windowCanvas.~&7713532151049593&~ === 0 ? ~&7083038346995&~.~&7082729686082&~ : ~&7083038346995&~.~&214646099849&~
+			~&214646099849&~: windowCanvas.~&7713532151049593&~ === 0 ? windowCanvas.contentAspectRatio * ~&7083038346995&~.~&7082729686082&~ : windowCanvas.contentAspectRatio * ~&7083038346995&~.~&214646099849&~ \
+END REBUILD
+END TRAVERSE
+END AFFECT
