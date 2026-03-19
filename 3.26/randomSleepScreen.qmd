@@ -1,4 +1,4 @@
-AFFECT /qt/qml/xofm/modules/sleepscreen/qml/default/sleep-window-opaque.qml 
+AFFECT [[15136737896827182809]] 
     IMPORT Qt.labs.folderlistmodel [[180923.180922]]
     TRAVERSE [[7711468349764991]]#[[6504254477]]
    REPLACE [[16364404249624396525]] WITH {

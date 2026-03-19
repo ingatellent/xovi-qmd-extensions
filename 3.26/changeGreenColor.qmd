@@ -6,7 +6,7 @@ INSERT TEMPLATE changeColorDefinitionsTemplate {
     newDisplayColor: "#338833"
 }
 END SLOT
-AFFECT /qt/qml/xofm/libs/toolbar/qml/WritingTool.qml
+AFFECT [[6722609618937832156]]
 TRAVERSE ?#[[6504254477]]
 REPLACE [[4129553690040935969]] WITH {
     function ~&4129553690040935969&~()

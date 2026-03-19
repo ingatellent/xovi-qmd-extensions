@@ -1,4 +1,4 @@
-AFFECT /qt/qml/xofm/libs/toolbar/qml/Toolbar.qml
+AFFECT [[11313888899523275277]]
     TRAVERSE ?#[[476924601591820571]]
         REPLACE [[233748328658231]] WITH {
             ~&233748328658231&~: ~&214625660372&~
