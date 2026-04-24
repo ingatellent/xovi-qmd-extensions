@@ -1,0 +1,103 @@
+LOAD ingatellentSettings.qmd
+SLOT ingatellentConfigProperties
+    INSERT {
+        property var savedOrientation: 0
+    }
+END SLOT
+AFFECT /qml/device/view/main/MainView.qml
+TRAVERSE ?#root
+TRAVERSE Binding[.target=documentOrientation]
+REPLACE value WITH {
+	value: {
+            if (documentView.visible) {
+                return documentView.item?.documentOrientation*90 + Values.ingatellentSettings.savedOrientation % 180 === 0 ? "" : documentView.item?.documentOrientation ;
+            } else {
+                return Values.ingatellentSettings.savedOrientation % 180 === 0 ? Qt.Vertical : Qt.Horizontal;
+            }
+        }
+}
+END TRAVERSE
+TRAVERSE Connections[.target=documentView.item]
+REPLACE onDocumentClosed WITH {
+        function onDocumentClosed() {
+            orientation.requestOneShotOrientation(Values.ingatellentSettings.savedOrientation);
+        }
+}
+END TRAVERSE
+REBUILD Component.onCompleted
+LOCATE AFTER STREAM / { /
+INSERT {
+     orientation.requestOneShotOrientation(Values.ingatellentSettings.savedOrientation);
+}
+END REBUILD
+END TRAVERSE
+END AFFECT
+AFFECT /qml/device/view/syncserviceexplorer/ExplorerHeader.qml
+TRAVERSE ?#headerItem
+LOCATE BEFORE SortDropdown#sortDropdown
+INSERT {
+	property var savedOrientation: Values.ingatellentSettings.savedOrientation
+        Rectangle {
+            id: rotateIcon
+		anchors {
+	            left: sortDropdown.right
+	            rightMargin: Values.designGridVerticalSpacing
+	            verticalCenter: parent.verticalCenter
+	        }
+		width: ArkControls.Values.iconSize.medium
+		height: ArkControls.Values.iconSize.medium
+
+            ArkControls.Icon {
+                source: "qrc:/ark/icons/arrow_counter_clockwise"
+                anchors.centerIn: parent
+                antialiasing: false
+                size: ArkControls.Values.iconSize.medium
+                color: Values.colorBlack
+            }
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+			Values.ingatellentSettings.savedOrientation = (Values.ingatellentSettings.savedOrientation + 270) % 360
+			headerItem.orientation.requestOneShotOrientation(Values.ingatellentSettings.savedOrientation)
+		}
+                onPressAndHold: {
+			Values.ingatellentSettings.savedOrientation = (Values.ingatellentSettings.savedOrientation + 90) % 360
+			headerItem.orientation.requestOneShotOrientation(Values.ingatellentSettings.savedOrientation)
+		} 
+            }
+        }
+}
+TRAVERSE SortDropdown#sortDropdown
+LOCATE BEFORE ALL
+REBUILD anchors
+LOCATE AFTER STREAM /rightMargin:/
+INSERT {
+ArkControls.Values.iconSize.medium + 2*
+}
+END REBUILD
+END TRAVERSE
+END TRAVERSE
+END AFFECT
+AFFECT /qml/device/view/documentview/DocumentView.qml 
+TRAVERSE ?#root > Connections[.target=KeyboardInfo]
+REBUILD onKeyboardConnectedChanged
+LOCATE BEFORE STREAM /exitTextMode/
+INSERT {
+if((portrait && Values.ingatellentSettings.savedOrientation % 180 === 0) || (!portrait && Values.ingatellentSettings.savedOrientation % 180 === 90)) {
+	Qt.callLater(orientation.requestOneShotOrientation,Values.ingatellentSettings.savedOrientation);
+}
+}
+END REBUILD
+END TRAVERSE
+TRAVERSE ?#toolbar
+REBUILD onToggleOrientationSelected
+LOCATE BEFORE STREAM / } /
+INSERT {
+if(!KeyboardInfo.keyboardConnected && ((portrait && Values.ingatellentSettings.savedOrientation % 180 === 0) || (!portrait && Values.ingatellentSettings.savedOrientation % 180 === 90))) {
+	root.orientation.requestOneShotOrientation(Values.ingatellentSettings.savedOrientation)                                            
+}
+}
+END REBUILD
+END TRAVERSE
+END AFFECT
+
