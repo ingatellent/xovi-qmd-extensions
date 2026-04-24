@@ -1,4 +1,4 @@
-LOAD ingatellentSettings.qmd
+;LOAD ingatellentSettings.qmd
 SLOT ingatellentConfigProperties
     INSERT {
         property var savedOrientation: 0
