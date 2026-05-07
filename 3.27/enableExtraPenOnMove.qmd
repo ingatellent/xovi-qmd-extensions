@@ -1,0 +1,9 @@
+AFFECT REBUILD /src/xofm/bundles/chiappa/chiappa.json 
+LOCATE BEFORE { "SecondaryPen": {
+		~&"254522926132630058&~: ~&214625660372&~
+	}, }
+REMOVE LOCATED
+INSERT { "SecondaryPen": {
+		~&"254522926132630058&~: ~&6504329801&~
+	}, }
+END REBUILD

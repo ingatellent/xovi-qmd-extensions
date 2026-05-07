@@ -1,0 +1,18 @@
+AFFECT [[1658694193319203921]]
+    IMPORT [[7081846004279]] [[180927.180926]]
+    TRAVERSE [[6502786168]]
+        LOCATE AFTER ALL
+        INSERT {
+	property ~&7712198086779994&~ ingatellentSettings : ingatellentSettings
+
+            ~&7712198086779994&~ {
+	    	~&5972374&~: ingatellentSettings
+                ~&7712874798136519&~: "ingatellentConfiguration"
+
+		    ~{ingatellentConfigProperties}~
+
+            }
+        }
+    END TRAVERSE
+END AFFECT
+
