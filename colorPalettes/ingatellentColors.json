@@ -1,0 +1,49 @@
+{
+  "paletteName": "Alternative colors",
+  "author": "ingatellent",
+  "version": "0.1",
+  "colors": [
+    {
+      "argbHex": "FFD22046",
+      "displayName": "Crimson",
+      "toolColor": 9,
+      "stacked": false,
+      "borderWidth": 2
+    },
+    {
+      "argbHex": "FFF4A261",
+      "displayName": "Orange",
+      "toolColor": 9,
+      "stacked": false,
+      "borderWidth": 2
+    },
+    {
+      "argbHex": "FFE9C46A",
+      "displayName": "Golden",
+      "toolColor": 9,
+      "stacked": false,
+      "borderWidth": 2
+    },
+    {
+      "argbHex": "FF8D202A",
+      "displayName": "Teal",
+      "toolColor": 9,
+      "stacked": false,
+      "borderWidth": 2
+    },
+    {
+      "argbHex": "FF457B9D",
+      "displayName": "Ocean",
+      "toolColor": 9,
+      "stacked": false,
+      "borderWidth": 2
+    },
+    {
+      "argbHex": "FF8D207A",
+      "displayName": "Purple",
+      "toolColor": 9,
+      "stacked": false,
+      "borderWidth": 2
+    }
+  ]
+}
