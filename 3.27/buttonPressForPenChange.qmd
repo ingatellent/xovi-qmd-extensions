@@ -12,7 +12,8 @@ INSERT {
 
 		RmStylus {
 			onButtonPressed: {
-			 pressTimestamp = ~&6502586279&~.now()
+			~&5972376&~ (!~&473450369389093477&~) ~&7083121450889&~;
+			 pressTimestamp = ~&6502586279&~.now();
 				 ~&5972376&~(!penWasChanged) {
 					 rmLastUsedTool = ~&7842069035455457876&~.~&8399230650759060099&~;
 					 rmLastUsedEraser = ~&7842069035455457876&~.~&254528381676974702&~.~&6504326343&~;
@@ -23,6 +24,7 @@ INSERT {
 		 }
 
 			onButtonReleased: {
+			~&5972376&~ (!~&473450369389093477&~) ~&7083121450889&~;
 			  buttonWasHeld = (~&6502586279&~.now() - pressTimestamp) >= 300;
 			  ~&5972376&~(!buttonWasHeld) {
 				  multipleClickTimer.pressCount++;
