@@ -23,84 +23,50 @@ INSERT {
 
     property ~&197088788&~ ~&214629676161&~: -1
 
-    function loadFile(~&6504167510&~) {
-        ~&214622607920&~ xhr =  new  XMLHttpRequest()
-        xhr.~&6504147419&~("GET", ~&6504167510&~)
-
-        xhr.onreadystatechange = function () {
-            ~&5972376&~ (xhr.readyState === XMLHttpRequest.DONE) {
-                ~&214622607920&~ json = ~&6502785411&~.parse(xhr.responseText)
-                applyPalette(json)
-            }
-        }
-
-        xhr.~&6504279475&~()
-    }
-
-    function applyPalette(json) {
-        colorPaletteModel.~&214622489712&~()
-	rowPaletteTitle.~&214632764553&~ = json.paletteName
-	columnPaletteTitle.~&214632764553&~ = json.paletteName
-
-        ~&197085552&~ (~&197091758&~ ~&180978&~ = 0; ~&180978&~ < json.~&7082545985179&~.~&7082886407723&~; ~&180978&~++) {
-            ~&214622607920&~ ~&180972&~ = json.~&7082545985179&~[~&180978&~]
-
-            ~&214622607920&~ ~&197098340&~ = ~&7713428776113935&~(~&180972&~.argbHex, 16) >>> 0
-
-            colorPaletteModel.~&7082469033025&~({
-                ~&478322454159853472&~: ~&180972&~.~&478322454159853472&~,
-                ~&254549367717124902&~: ~&180972&~.~&254549367717124902&~,
-                ~&233744863191016&~: ~&180972&~.~&233744863191016&~,
-                ~&475535838851480711&~: ~&180972&~.~&475535838851480711&~,
-                ~&197098340&~: ~&197098340&~,
-                ~&15784640987262621918&~: "#" + ~&180972&~.argbHex
-            })
-        }
-    }
-
     function resetToDefault() {
-	hasCustomPalette = ~&214625660372&~
-        colorPaletteModel.~&214622489712&~()
-	rowPaletteTitle.~&214632764553&~ = "rM colors"
-	columnPaletteTitle.~&214632764553&~ = "rM colors"
+    	hasCustomPalette = ~&214625660372&~;
+	rowPaletteTitle.~&214632764553&~ = "rM colors";
+	columnPaletteTitle.~&214632764553&~ = "rM colors";
 	}
 
     function nextPalette() {
-        ~&214622607920&~ ~&214622615378&~ = paletteFiles.~&214622615378&~
+        ~&214622607920&~ ~&214622615378&~ = paletteFiles.~&214622615378&~;
 
         ~&5972376&~ (~&214622615378&~ === 0) {
-            resetToDefault()
-            ~&7083121450889&~
+            resetToDefault();
+            ~&7083121450889&~;
         }
 
-        ~&214629676161&~++
+        ~&214629676161&~++;
 
         ~&5972376&~ (~&214629676161&~ >= ~&214622615378&~) {
-            ~&214629676161&~ = -1
-            resetToDefault()
-            ~&7083121450889&~
+            ~&214629676161&~ = -1;
+            resetToDefault();
+            ~&7083121450889&~;
         }
 
-        ~&214622607920&~ ~&6504167510&~ = paletteFiles.~&197086313&~(~&214629676161&~, "fileUrl")
-        loadFile(~&6504167510&~)
-	hasCustomPalette = ~&6504329801&~
+
+	colorPaletteModel.~&7083172477658&~ = paletteFiles.~&197086313&~(~&214629676161&~,"fileUrl");	
+	rowPaletteTitle.~&214632764553&~ = colorPaletteModel.~&6503936152&~.~&214642559243&~;
+	columnPaletteTitle.~&214632764553&~ = colorPaletteModel.~&6503936152&~.~&214642559243&~;
+	hasCustomPalette = ~&6504329801&~;
     }
 }
 
 FolderListModel {
         ~&5972374&~: paletteFiles
         ~&7082663378949&~: "file:///home/root/colorPalettes/"
-        nameFilters: ["*.json"]
+        nameFilters: ["*.qml"]
 	showDirs: ~&214625660372&~
 }
-
-~&254492861152542582&~ {
-    ~&5972374&~: colorPaletteModel
+~&7081645463424&~ {
+	~&5972374&~: colorPaletteModel
 }
+
 }
 TRAVERSE [[425121728314878811.432643201877637292]]:[[254480449992140494]] > [[7712155293725601]]
 REPLACE [[214634455770]] WITH{
-	~&214634455770&~: hasCustomPalette ? colorPaletteModel : ~&8399340017248501209&~
+	~&214634455770&~: hasCustomPalette ? colorPaletteModel.~&6503936152&~ : ~&8399340017248501209&~
 }
 
 END TRAVERSE
