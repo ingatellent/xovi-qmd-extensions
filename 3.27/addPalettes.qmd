@@ -15,7 +15,7 @@ REPLACE [[4129553690040935969]] WITH {
             ~&6504254477&~.~&8168341223615502881&~(~&8564000837190609446&~.~&6102142810113562074&~());
         }
     }
-    property ~&6503679477&~ customPalette : ~&214625660372&~
+    property ~&6503679477&~ hasCustomPalette : ~&214625660372&~
     ~&7712130752583461&~ {
     ~&5972374&~: paletteController
 
@@ -57,8 +57,8 @@ REPLACE [[4129553690040935969]] WITH {
     }
 
     function resetToDefault() {
+	hasCustomPalette = ~&214625660372&~
         colorPaletteModel.~&214622489712&~()
-	customPalette = ~&214625660372&~
 	rowPaletteTitle.~&214632764553&~ = "rM colors"
 	columnPaletteTitle.~&214632764553&~ = "rM colors"
 	}
@@ -66,7 +66,6 @@ REPLACE [[4129553690040935969]] WITH {
     function nextPalette() {
         ~&214622607920&~ ~&214622615378&~ = paletteFiles.~&214622615378&~
 
-        /* no palettes → fallback immediately*/
         ~&5972376&~ (~&214622615378&~ === 0) {
             resetToDefault()
             ~&7083121450889&~
@@ -80,9 +79,9 @@ REPLACE [[4129553690040935969]] WITH {
             ~&7083121450889&~
         }
 
-	customPalette = ~&6504329801&~
         ~&214622607920&~ ~&6504167510&~ = paletteFiles.~&197086313&~(~&214629676161&~, "fileUrl")
         loadFile(~&6504167510&~)
+	hasCustomPalette = ~&6504329801&~
     }
 }
 FolderListModel {
@@ -90,16 +89,16 @@ FolderListModel {
         ~&7082663378949&~: "file:///home/root/colorPalettes/"
         nameFilters: ["*.json"]
 	showDirs: ~&214625660372&~
-    }
+}
 ~&254492861152542582&~ {
     ~&5972374&~: colorPaletteModel
-    }
+}
 
 }
 TRAVERSE [[425121728314878811.432643201877637292]]:[[254480449992140494]] > [[7712155293725601]]
 REPLACE [[214634455770]] WITH{
 
-	~&214634455770&~: customPalette ? colorPaletteModel : ~&8399340017248501209&~
+	~&214634455770&~: hasCustomPalette ? colorPaletteModel : ~&8399340017248501209&~
 }
 
 END TRAVERSE
@@ -120,20 +119,14 @@ INSERT {
                 }
 }
 END TRAVERSE
-TRAVERSE ?#[[500047409926864674]] 
-LOCATE BEFORE [[14125623155555875541]] > [[8051309119171855706]]
+TRAVERSE ?#[[500047409926864674]] > [[14125623155555875541]] > [[425121728314878811.13206231600618488452]][.[[214632764553]]~[[214584656136]]]
+LOCATE BEFORE ALL
 INSERT {
-	   
-                ~&425121728314878811&~.~&13206231600618488452&~ {
-		~&5972374&~: rowPaletteTitle
-		~&214632764553&~: "rM colors"
-		    ~&15640708674084664669&~: ~&6504254477&~.~&15640708674084664669&~
-                    ~&7081629735527&~.~&254529418434902000&~: ~&6504329801&~
+~&5972374&~: rowPaletteTitle 
 		    ~&254494525842443467&~ {
 		    ~&233721384511543&~.~&6503816592&~: ~&7083038346995&~
 		    ~&254542236275632405&~: paletteController.nextPalette()
 		    }
-	}
 }
 END TRAVERSE
 TRAVERSE ?#[[7060683329257607547]]
