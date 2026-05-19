@@ -1,4 +1,4 @@
-addAspectLockToSelection.qmd# Extensions for xovi on a reMarkable
+# Extensions for xovi on a reMarkable
 
 These are extensions for the reMarkable tablets. All extensions are made for personal use to improve the user interface or add extra functionality. Many of the extensions are probably only relevant for a very small number (>= 1) of people, whereas other extensions might be relevant for a large group. Most extensions can be installed independently of the others, or you can install all files.
 
