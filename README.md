@@ -87,6 +87,11 @@ Adds the shortcurt `Ctrl + S` for toggling split view. Requires splitView.qmd.
 ### splitView.qmd
 Adds a button to the quick settings panel, which toggles a split view for both the navigator and a secondary document. Also makes it possible to run an appload app next to a document (instead of on top of the document).
 Requires ingatellentSettings.qmd
+If you want to use without Appload, remove these two lines from the file
+```
+                apploadVKB: ~&254550717068498203&~
+                apploadWindowParent: ~&254550717068498203&~
+```
 
 ### addPalettes.qmd
 Make it possible to change the color palette by clicking the heading. You can add your own palette by creating the folder `/home/root/colorPalettes/` and adding qml files with color information. See the folder `colorPallettes` for two examples of such custom palettes.
