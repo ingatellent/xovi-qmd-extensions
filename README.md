@@ -38,7 +38,7 @@ Enable keyboard shortcuts for navigation:
 
 Shortcuts are *not* enabled when in text mode.
 
-### tabToChangeViewOrPage.qmd
+### tapToChangeViewOrPage.qmd
 (Requires scrollScreenUpOrDown.qmd)
 Add the following gestures and tap areas:
 - When the toolbar is hidden, tap on the bottom left to scroll up, and to change to the previous page if you are already nearly at the top) (no scrollbar shown)
@@ -62,14 +62,14 @@ Add the following gesture:
 - Swipe right with four fingers to open the previously opened document.
 Requires ingatellentSettings.qmd
 
-### fourFingerSwipeLeftToCompleteAndOpenNextDoc.qmd
+### fourFingerSwipeLeftForCompleteAndOpenNextDoc.qmd
 Add the following gesture:
 - Swipe left with four fingers to move the open document into the first folder in the current folder and open the first document in the current folder. If no folder exists a folder named "Completed" is made created. If the current folder is empty the document is closed.
 
-### shortcutsToChooseErase.qmd
+### shortcutsToChooseEraser.qmd
 - On rM1 or rM2 if you install the [remarkable-stylus plugin](https://github.com/mb1986/remarkable-stylus) you can use the side button to erase selection and the rubber eraser as a regular eraser (on rM1 the plugin is currently broken in notebooks, but works in .pdfs - if you compile it yourself and change the keypress from Ctrl+I to Ctrl+T this extension will also work in notebooks)
 
-### buttonForPenChange.qmd
+### buttonPressForPenChange.qmd
 When installed you can press the side button on a pen to erase selection. If you click once (short), the tool changes to selection. If you prefer to use the eraser and not selection eraser, you can look for the little `(8)` in the code and change it to a `(6)`. If you double click you change to the previous tool in the toolbar (eraser tool ignored). Requires [rm-stylus](https://github.com/rmitchellscott/rm-stylus).
 
 ### rubberEraserForRm1.qmd
@@ -160,7 +160,7 @@ Hide the button for showing the toolbar. Should definitely only be used with ges
 ### miniLightSleep.qmd
 Show a line of text at the bottom right corner instead of the light sleep banner.
 
-### feverLightSteps.qmd
+### fewerLightSteps.qmd
 For the rmpp (do **not** use on rM2 or rM1). Changes the 5 level light slider in quick settings to a 4 level slider, such that you can choose 0%, 25%, 50%, 75% and 100% light intensity. In settings (long press the lamp symbol below the slider), you can still choose 20%, 40% and 60%, thus increasing the number of different levels.
 
 ### enableExtraPenOnMove.qmd
@@ -199,7 +199,7 @@ Fixes the shortcuts Ctrl + W and ESC for closing the current folder.
 ### changeVerticalJump.qmd
 Increase the distance when scrolling down a page, such that the overlap is only 10%.
 
-### delayStrokeRefresch.qmd
+### delayStrokeScreenRefresh.qmd
 Delays the refresh after making a colored stroke, such that the color is not updated until a period of 10 seconds with no interaction with the tablet.
 
 ### ingatellentSettings.qmd
@@ -208,4 +208,3 @@ Used by some of the extensions to save settings across reboots.
 ## Alpha releases
 
 You can sometimes find non listed .qmd files in the repository. These are changes that are not quite polished or may contain many more bugs, than the listed extensions.
-
