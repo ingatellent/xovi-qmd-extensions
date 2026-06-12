@@ -108,7 +108,9 @@ Use on rM1 and rM2 to enable the full color selection from the RMPP
 Add a tag directly from the context menu, when you have selected text. Works on handwritten text (requires Connect or rmfakecloud with handwriting recognition enabled) typed text on notepages, or on selected text from a .pdf file or .epub file (experimental setting must be enabled).
 
 ### randomSleepScreen.qmd
-Picks a random sleep screen image from the folder `~/sleepScreens/`. Falls back to the chosen path in xochitl.conf (`SleepScreenPath=...`) if no .png images are found.
+Picks a random sleep screen image from the folder `~/sleepScreens/`. Falls back to the chosen path in xochitl.conf (`SleepScreenPath=...`) if no .png images are found. On 3.27: Does not work on the reMarkable Paper Pure (there's an alternative file available).
+### randomSleepScreen-pure.qmd
+Picks a random sleep screen image from the folder `~/sleepScreens/`. Falls back to the chosen path in xochitl.conf (`SleepScreenPath=...`) if no .png images are found. On 3.27: Only for the reMarkable Paper Pure.
 
 ### addCompletedButton.qmd
 This adds a [Completed] button, when selecting documents in the main navigator. The button is visible if the current folder contains at least one subfolder, and pressing the button moves the document to the first subfolder. This can be used if you review a lot of documents, and have created a subfolder to the ones you have alredy reviewed, then you can easily move a reviewed document to the subfolder (without leaving the current view and scroll location).
