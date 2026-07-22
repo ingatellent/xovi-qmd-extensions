@@ -135,17 +135,41 @@ You probably always want `newToolColor` to be `9`. The original colors are like 
     BLACK = 0,
     GRAY = 1,
     WHITE = 2,
-    YELLOW = 3,
-    GREEN = 4,
-    PINK = 5,
+    YELLOW = 3, // Highlighter
+    GREEN = 4, // Highlighter
+    PINK = 5, // Highlighter
     BLUE = 6,
     RED = 7,
-    GRAY_OVERLAP = 8,
+    GRAY_OVERLAP = 8, // Highlighter
     ARGB = 9,
     GREEN_2 = 10,
     CYAN = 11,
     MAGENTA = 12,
     YELLOW_2 = 13,
+```
+There are a few special colors for the highlighter and the shader, they need to be handled a bit differently, since they have the same tool color (`9`).
+
+```
+HIGHLIGHTER_ORANGE = (0xFFFFC38C),
+HIGHLIGHTER_BLUE = (0xFFBEEAFE),
+SHADER_GRAY = (0x40211E1C), 
+SHADER_ORANGE = (0x73FEB200), 
+SHADER_MAGENTA = (0x80C07FD2), 
+SHADER_BLUE = (0x4D304AE0),
+SHADER_RED = (0x66C23132),
+SHADER_GREEN = (0x8091DA71),
+SHADER_YELLOW = (0x73FAE719),
+SHADER_CYAN =  (0x6674D2E8),
+```
+
+You can change e.g. the orange highlighter by including this code in the `SLOT`
+
+```
+INSERT TEMPLATE changeColorDefinitionsTemplateForCustomColor {
+    originalRgb: (0xFFFFC38C)
+    newToolrgb: (0xFFF4A261)
+    newDisplayColor: "#F4A261"
+}
 ```
 
 
