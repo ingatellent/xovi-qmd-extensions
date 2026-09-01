@@ -1,0 +1,114 @@
+SLOT ingatellentTransientProperties
+INSERT {
+property ~&6503679477&~ ingatellentCustomSleep: ~&214625660372&~
+}
+END SLOT
+AFFECT [[2328484894988065446]]
+TRAVERSE ?#[[7713531976371484]]
+REBUILD [[233748328658231]] LOCATE BEFORE ALL INSERT { ~&7082020628281&~.ingatellentCustomSleep || }
+END REBUILD
+TRAVERSE [[428051690305612204]][.[[7083194890448]]=[[12464413590283098527]]]
+REPLACE [[3195267410216262759]] WITH {
+
+function ~&3195267410216262759&~(~&7713450226052422&~, ~&6504100136&~) {
+                ~&197091758&~ ~&233731872134510&~ = ~&6504100136&~ === ~&12464413590283098527&~.~&7081724354802&~;
+                ~&197091758&~ ~&7713727085727005&~ = ~&7713450226052422&~ === ~&12464413590283098527&~.~&7081724354802&~;
+
+                ~&5972376&~ (~&233731872134510&~ !== ~&7713727085727005&~) {
+                    /* Clear the screen to avoid leaking contents (when going to sleep),*/
+                    /* or to avoid keeping remnants of the sleep screen (when waking up).*/
+                    /**/
+                    /* We explicitly want to avoid ghost-busting when we return to*/
+                    /* Normal from Standby, as that would make the feature rather*/
+                    /* annoying.*/
+                    ~&6687579895491175043&~.~&5217184758014819729&~();
+~&5972376&~(~&233731872134510&~) {
+~&7082020628281&~.ingatellentCustomSleep = ~&214625660372&~;
+}
+
+                }
+            }
+
+
+}
+END TRAVERSE
+END TRAVERSE
+END AFFECT
+
+AFFECT [[15136737896827182809]] 
+IMPORT [[7082546018834]] [[180922.180921]]
+IMPORT [[197082280.8400022150001312063]] [[180922.180921]]
+IMPORT [[7082573613689.5972775.6504315758]] [[180922.180921]]
+TRAVERSE [[7711468349764991]]#[[6504254477]] > [[14427530104363229979]]:[[477062473974076915]]
+REBUILD [[214622605608]] LOCATE BEFORE ALL INSERT { ~&7082020628281&~.ingatellentCustomSleep ? ~&"503220030291830651&~ :  }
+END REBUILD
+LOCATE BEFORE ALL INSERT {
+            ~&254501558939456351&~ {
+                ~&5972374&~: sleepRow
+		~&233748328658231&~: ~&7082020628281&~.ingatellentCustomSleep
+                ~&233721384511543&~ {
+                    ~&214640173127&~: ~&7083038346995&~.~&214640173127&~
+                    ~&499747351624466981&~: 20
+                    ~&7082507142622&~: ~&7083038346995&~.~&7082507142622&~
+                    ~&15692798426932296956&~: 15
+                }
+                ~&6503165774&~ {
+                    ~&6503823200&~.~&254543497768871654&~: 2*~&7082020628281&~.~&8015843119099583226&~
+                    ~&5972374&~: zzz
+                    ~&6503823200&~.~&6503679370&~: ~&6504329801&~
+                    /*text: !(DeviceInfo.deviceType === DeviceInfo.RM100 || DeviceInfo.deviceType === DeviceInfo.RM110) ? "💤 Take pen to start writing" : "Press power button to wake up"*/
+                    ~&6504315758&~: "💤"
+                }
+            }
+}
+    END TRAVERSE
+    TRAVERSE  ?#[[6504038586]]
+    LOCATE AFTER [[5972374]] INSERT {
+    ~&233748328658231&~: !~&7082020628281&~.ingatellentCustomSleep
+    }
+    END TRAVERSE
+TRAVERSE  ?#[[16041628731068125427]]
+    REBUILD [[233748328658231]]
+    LOCATE BEFORE ALL
+    INSERT {
+    !~&7082020628281&~.ingatellentCustomSleep && 
+    }
+    END REBUILD
+    END TRAVERSE
+TRAVERSE  ?#[[477062468377874966]]
+    LOCATE AFTER [[5972374]] INSERT {
+    ~&233748328658231&~: !~&7082020628281&~.ingatellentCustomSleep
+    }
+    END TRAVERSE
+TRAVERSE  ?#[[3012193999662111326]]
+    LOCATE AFTER [[5972374]] INSERT {
+    ~&233748328658231&~: !~&7082020628281&~.ingatellentCustomSleep
+    }
+    END TRAVERSE
+END AFFECT
+
+SLOT ingatellentQuickSettingsButton
+    INSERT {
+        ~&10845406345867313529&~ {
+            ~&5972374&~: ingatellentSleepButton
+            ~&7713561545874130&~: ~&214625660372&~
+            ~&8399601734642709923&~: ~&"5203921373578675596&~
+            ~&233726547792244&~: ~&6504329801&~
+
+            ~&254542236275632405&~: {
+	    ~&233724020023100&~.~&197092075&~("sleep");
+	    ~&7082020628281&~.ingatellentCustomSleep = ~&6504329801&~;
+	    ~&12464413590283098527&~.requestSleep();
+	    ingatellentCloseTimer.~&214641748151&~();
+            }
+        }
+    }
+END SLOT
+
+AFFECT [[11542018640809782132]]
+    IMPORT [[197082280.8400022150001312063]] [[180922.180921]]
+END AFFECT
+
+AFFECT [[10936356414964521612]]
+    IMPORT [[197082280.8400022150001312063]] [[180922.180921]]
+END AFFECT
