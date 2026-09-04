@@ -1,0 +1,9 @@
+AFFECT REBUILD /src/xofm/bundles/chiappa/chiappa.json 
+LOCATE BEFORE { "SecondaryPen": {
+		"priority": 99 
+	}, }
+REMOVE LOCATED
+INSERT { "SecondaryPen": {
+		"priority": 15
+	}, }
+END REBUILD
