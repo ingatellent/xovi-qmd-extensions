@@ -8,29 +8,14 @@ TRAVERSE ?#[[7713531976371484]]
 REBUILD [[233748328658231]] LOCATE BEFORE ALL INSERT { ~&7082020628281&~.ingatellentCustomSleep || }
 END REBUILD
 TRAVERSE [[428051690305612204]][.[[7083194890448]]=[[12464413590283098527]]]
-REPLACE [[3195267410216262759]] WITH {
-
-function ~&3195267410216262759&~(~&7713450226052422&~, ~&6504100136&~) {
-                ~&197091758&~ ~&233731872134510&~ = ~&6504100136&~ === ~&12464413590283098527&~.~&7081724354802&~;
-                ~&197091758&~ ~&7713727085727005&~ = ~&7713450226052422&~ === ~&12464413590283098527&~.~&7081724354802&~;
-
-                ~&5972376&~ (~&233731872134510&~ !== ~&7713727085727005&~) {
-                    /* Clear the screen to avoid leaking contents (when going to sleep),*/
-                    /* or to avoid keeping remnants of the sleep screen (when waking up).*/
-                    /**/
-                    /* We explicitly want to avoid ghost-busting when we return to*/
-                    /* Normal from Standby, as that would make the feature rather*/
-                    /* annoying.*/
-                    ~&6687579895491175043&~.~&5217184758014819729&~();
-~&5972376&~(~&233731872134510&~) {
-~&7082020628281&~.ingatellentCustomSleep = ~&214625660372&~;
+REBUILD [[3195267410216262759]]
+LOCATE AFTER STREAM | { |
+INSERT {
+	~&5972376&~(~&6504100136&~ === ~&12464413590283098527&~.~&7081724354802&~) {
+		~&7082020628281&~.ingatellentCustomSleep = ~&214625660372&~;
+	}
 }
-
-                }
-            }
-
-
-}
+END REBUILD
 END TRAVERSE
 END TRAVERSE
 END AFFECT
