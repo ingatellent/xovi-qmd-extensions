@@ -1,0 +1,10 @@
+AFFECT REBUILD /src/xofm/bundles/ferrari/ferrari.json
+LOCATE BEFORE { "portraitWindows": [
+        ~&"1236734379237073266&~,
+        "sleepscreen/window/sleep-window-opaque"
+      ] }
+REMOVE LOCATED
+INSERT { "portraitWindows": [
+        ~&"1236734379237073266&~
+      ] }
+END REBUILD
