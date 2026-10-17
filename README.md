@@ -75,8 +75,8 @@ When installed you can press the side button on a pen to erase selection. If you
 ### rubberEraserForRm1.qmd
 Make the rubber eraser on a pen work as eraser on rM1. Requires [rm-stylus](https://github.com/rmitchellscott/rm-stylus).
 
-### closeFolderOnCtrlUp.qmd
-Adds the shortcut `Ctrl + Up` (known from macOS) for navigating the parent folder in the navigator.
+### closeOnCtrlUp.qmd
+Adds the shortcut `Ctrl + Up` (known from macOS) for navigating the parent folder in the navigator (or closing the current document).
 
 ### shortcutForSplitView.qmd
 Adds the shortcurt `Ctrl + S` for toggling split view. Requires splitView.qmd.
