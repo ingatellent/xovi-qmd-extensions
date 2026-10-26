@@ -415,10 +415,10 @@ END TRAVERSE
 END AFFECT
 
 ; Appload specific code - remove, if not using appload.
-AFFECT [[17829486709881926170]]
-TRAVERSE ?#[[15519537241748026628]]
+AFFECT /appload/qml/appload.qml
+TRAVERSE ?#_appLoadView
 LOCATE BEFORE ALL
-REBUILD [[16176814841830594268]]
+REBUILD launchWindow
 ;LOCATE BEFORE STREAM \switch\
 ;TODO: Find the deviceAspectRatio from screen instead
 ;INSERT {
@@ -432,7 +432,7 @@ TRAVERSE ?#[[6504254477]]
 LOCATE AFTER ALL
 INSERT  {
 ~&254480451320573660&~.~&495334332051582499&~: {
-~&15519537241748026628&~.~&7082453764421&~ = !secondNavigator
+_appLoadView.~&7082453764421&~ = !secondNavigator
 }
 }
 END TRAVERSE

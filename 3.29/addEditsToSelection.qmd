@@ -26,15 +26,15 @@ property ~&6503679477&~ hasVariableWidth: currentTool != 13 && currentTool !=17
 
     ~&8399601734642709923&~: {
     ~&214622607920&~ toolIcons = {
-    15: "qrc:/ark/icons/ballpoint_tip",
-    17: "qrc:/ark/icons/fineliner_tip",
-    18: "qrc:/ark/icons/highlighter_tip",
-    14: "qrc:/ark/icons/pencil_tip",
-    13: "qrc:/ark/icons/mechanical_pencil_tip",
-    21: "qrc:/ark/icons/calligraphy_pen_tip",
-    16: "qrc:/ark/icons/marker_tip",
-    23: "qrc:/ark/icons/shader_tip",
-    12: "qrc:/ark/icons/paintbrush_tip",
+    15: ~&"12472390807386460417&~,
+    17: ~&"1104274047935997048&~,
+    18: ~&"9093988532389370539&~,
+    14: ~&"5204404160700829527&~,
+    13: ~&"14459632586516747131&~,
+    21: ~&"4188248842830809614&~,
+    16: ~&"5204259481269240318&~,
+    23: ~&"5204547061482173331&~,
+    12: ~&"1413836428252919100&~,
     };
     ~&7083121450889&~ toolIcons[changeAllStyles.currentTool];
     }
@@ -49,7 +49,7 @@ property ~&6503679477&~ hasVariableWidth: currentTool != 13 && currentTool !=17
 		~&233748328658231&~: changeAllStyles.currentThickness > 0
 		~&6503823200&~.~&7082646817675&~: "Helvetica"
 		~&6503823200&~.~&7083316716977&~: ~&6502673216&~.~&6502529386&~
-		~&6503823200&~.~&254543734469215886&~: 18
+		~&6503823200&~.pointSize: 18
 		}
 		~&6502786168&~ {
 		~&5972374&~: ~&254533840317782502&~
